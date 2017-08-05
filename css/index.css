@@ -1,0 +1,237 @@
+body{
+    margin:0;
+    padding:0;
+    background: #e4ffdc;
+}
+.wrapper{
+    position: absolute;
+    width: 270px;
+    height: 100px;
+    top:calc(50% - 30px);
+    left:calc(50% - 90px);
+}
+.a{
+    position: absolute;
+    top:-70px;
+    left:24px;
+    width: 240px;
+    height: 100px;
+    border-radius: 360px;
+    background: #3cb64b;
+    z-index: 0;
+}
+.a:before{
+    content: '';
+    position: absolute;
+    top:2px;
+    left: -3px;
+    width: 240px;
+    height: 100px;
+    border-radius: 360px;
+    background: #e4ffdc;
+    z-index: 0;
+}
+.b{
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    width: 240px;
+    height: 90px;
+    border-radius: 360px;
+    background: #3cb64b;
+    z-index: 0;
+}
+.b:before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -3px;
+    width: 240px;
+    height: 90px;
+    border-radius: 360px;
+    background: #e4ffdc;
+    z-index: 0;
+}
+
+.body{
+    position: absolute;
+    top:15px;
+    left:15px;
+    width:200px;
+    height: 60px;
+    z-index: 1;
+    background: #32983e;
+    transform: skew(-25deg);
+}
+.body .back{
+    position: absolute;
+    left:-90px;
+    width:220px;
+    height: 60px;
+    border-bottom-left-radius: 20px;
+    background: #32983e;
+    z-index: 0;
+    transform: skew(55deg);
+}
+.body .shading{
+    position: absolute;
+    top:0px;
+    left:0px;
+    background: #32983e;
+    height: 50px;
+    width: 200px;
+    border-bottom-left-radius: 400px;
+    border-bottom-right-radius: 170px;
+}
+.body .eye{
+    position: absolute;
+    right:10px;
+    top:10px;
+    z-index: 1;
+    width: 12px;
+    height: 12px;border-radius: 360px;
+    background: #006837;
+    animation: eys 2.5s 1s linear infinite;
+    -webkit-animation: eys 2.5s 1s linear infinite;
+    -moz-animation:eys 2.5s 1s linear infinite;
+    -ms-animation:eys 2.5s 1s linear infinite;
+}
+@keyframes eys {
+    0%{
+        width: 12px;
+        height: 12px;
+        border-radius: 360px;
+    }
+    5%{
+        width: 12px;
+        height: 1px;
+        border-radius: 0px;
+    }
+    10%{
+        width: 12px;
+        height: 12px;
+        border-radius: 360px;
+    }
+}
+@-moz-keyframes eye {
+
+    0%{
+        width: 12px;
+        height: 12px;
+        border-radius: 360px;
+    }
+    5%{
+        width: 12px;
+        height: 1px;
+        border-radius: 0px;
+    }
+    10%{
+        width: 12px;
+        height: 12px;
+        border-radius: 360px;
+    }
+        }
+@-webkit-keyframes eye {
+    0%{
+        width: 12px;
+        height: 12px;
+        border-radius: 360px;
+    }
+    5%{
+        width: 12px;
+        height: 1px;
+        border-radius: 0px;
+    }
+    10%{
+        width: 12px;
+        height: 12px;
+        border-radius: 360px;
+    }
+}
+@-ms-keyframes eye {
+    0%{
+        width: 12px;
+        height: 12px;
+        border-radius: 360px;
+    }
+    5%{
+        width: 12px;
+        height: 1px;
+        border-radius: 0px;
+    }
+    10%{
+        width: 12px;
+        height: 12px;
+        border-radius: 360px;
+    }
+}
+
+.body .wing{
+    position: absolute;
+    top:-3px;
+    left: 25px;
+    width: 120px;
+    height: 60px;
+    background: rgba(131,195,63,0.8);
+    transform: rotate(3deg);
+    z-index: 4;
+    border-bottom-left-radius: 50px;
+}
+.body .wing:before{
+    content: '';
+    position: absolute;
+    left: -160px;
+    width: 205px;
+    height: 60px;
+    border-bottom-left-radius: 400px;
+    background: rgba(131,195,63,0.8);
+    transform: skew(55deg);
+}
+.shading_back{
+    position: absolute;
+    top:0px;
+    left: -95px;
+    background: #39b549;
+    height: 50px;
+    width: 120px;
+    border-bottom-left-radius: 100px;
+    transform: skew(55deg);
+    z-index: 2;
+    overflow: hidden;
+}
+.shading_back .stripe1{
+    position: absolute;
+    top:-50px;
+    left: -16px;
+    width: 4px;
+    height: 200px;
+    background: #016a37;
+    transform: skew(-55deg);
+}
+.shading_back .stripe2{
+    position: absolute;
+    top:-50px;
+    left: 12px;
+    width: 6px;
+    height: 200px;
+    background: #016a37;
+    transform: skew(-50deg);
+}
+.shading_back .stripe3{
+    position: absolute;
+    top:-50px;
+    left: 40px;
+    width: 9px;
+    height: 200px;
+    background: #016a37;
+    transform: skew(-45deg);
+}
+.shading_back .stripe4{
+    position: absolute;
+    top:-50px;
+    left: 65px;
+    width: 9px;
+    height: 200px;
+    background: #016a37;
+    transform: skew(-40deg);
+}
